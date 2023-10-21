@@ -6,8 +6,11 @@
 
 #header{
   background-color: red;
+  z-index: 1;
 }
-
+body{
+  background-color: #FFA07A;
+}
 #h1-header{
   color: #fff;
   font-family: arial;
@@ -43,11 +46,46 @@
   margin: 0 auto;
   text-align: center;
   width: 90%;
-  height: 150px;
+  height: 160px;
   border-radius: 12px;
 }
 
 .h2-section1{
   font-family: arial;
-  font-size: 18px;
+  font-size: 25px;
+  padding-top: 27px;
+}
+.p1{
+  padding-top: 13px;
+  font-family: arial;
+  font-size: 22px;
+}
+#section-grid{
+  padding: 10px;
+  height: 10%;
+  padding-bottom: 20px;
+}
+.section-2{
+  background-color: red;
+  margin:0 auto;
+  width: 50%;
+  max-width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  text-align: center;
+}
+.grid{
+  background-color: none;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+}
+.sub-grid{
+  margin:0 auto;
+  padding: 20%;
+  background-color: #fff;
 }
