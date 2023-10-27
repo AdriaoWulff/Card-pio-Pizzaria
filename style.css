@@ -1,91 +1,94 @@
-{
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-#header{
-  background-color: red;
-  z-index: 1;
-}
-body{
-  background-color: #FFA07A;
-}
-#h1-header{
-  color: #fff;
-  font-family: arial;
-  padding-left: 5px;
-  padding-top: 3px;
-  padding-bottom: 1px;
-}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title> Pizzaria Bem Barato </title>
+  <link rel="stylesheet" type='text/css' href="style.css">
 
-.h3-header{
-  color: #fff;
-  font-family: Arial;
-  padding-left: 5px;
-  padding-top: 3px;
-  padding-bottom: 1px;
-}
+</head>
 
-.link-cabeçalho{
-  text-decoration: none;
-  color: #fff;
-  word-spacing: 5px;
-  font-size: 16px;
-  font-family: arial;
-}
+<body>
+  <header id="header">
+    <h1 id="h1-header"> Pizzaria Bem Barato</h1>
+    <h3 class="h3-header"> A Melhor Pizzaria do Bairro</h3>
 
-#navegação{
-  text-align: right;
-  padding-right: 5px;
-}
+    <nav id="navegação">
+      <a class="link-cabeçalho" href="#"> Home </a>
+      <a class="link-cabeçalho" href="#"> Pizzas </a>
+      <a class="link-cabeçalho" href="#"> Bebidas </a>
+      <a class="link-cabeçalho" href="#"> Sobremesas </a>
+      <a class="link-cabeçalho" href="#"> Endereço </a>
+    </nav>
+  </header>
+  <br>
+  <br>
+  <br>
+  <section class="section-1">
+    <h2 class="h2-section1"> Bem Barato Promoções </h2>
+    <p class="p1"> De Segunda à Sexta Pizzas por R$ 19,99. </p>
+    <p class="p1"> Aproveite essa Oferta Especial.</p>
+  </section>
 
-.section-1{
-  color: #fff;
-  background-color: red;
-  margin: 0 auto;
-  text-align: center;
-  width: 90%;
-  height: 160px;
-  border-radius: 12px;
-}
+  <br>
+  <br>
+  <br>
 
-.h2-section1{
-  font-family: arial;
-  font-size: 25px;
-  padding-top: 27px;
-}
-.p1{
-  padding-top: 13px;
-  font-family: arial;
-  font-size: 22px;
-}
-#section-grid{
-  padding: 10px;
-  height: 10%;
-  padding-bottom: 20px;
-}
-.section-2{
-  background-color: red;
-  margin:0 auto;
-  width: 50%;
-  max-width: 100%;
-  height: 180px;
-  border-radius: 12px;
-  text-align: center;
-}
-.grid{
-  background-color: none;
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-column-gap: 10px;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 5px;
-}
-.sub-grid{
-  margin:0 auto;
-  padding: 20%;
-  background-color: #fff;
-}
+  <section class="section-2" id="section-grid">
+    <h2>Pizzas do Nosso Cardápio</h2>
+    <br>
+    <div id="sub-div-1" class="grid">
+      <div class="sub-grid">
+        <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2022/03/04/3cb5530b66938475b217183a18974de301f5b0fd.jpg">
+        <div class="item-sub-grid">
+          <h2 class="h2-sub-grid"> Nome da Pizza </h2>
+          <p class="p-preços">Preço da Pizza</p>
+          <button class="botao-acao">Pedir Pizza</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div id="sub-div-2" class="sub-grid">
+          <h2 class="h2-sub-grid"> Nome da Pizza </h2>
+          <img class="img-pizza" src="" alt="">
+          <p class="p-preços">Preço da Pizza</p>
+          <button class="botao-acao">Pedir Pizza</button>
+        </div>
+
+
+        <div class="grid">
+          <div id="sub-div-3" class="sub-grid">
+            <h2 class="h2-sub-grid"> Nome da Pizza </h2>
+            <img class="img-pizza" src="" alt="">
+            <p class="p-preços">Preço da Pizza</p>
+            <button class="botao-acao">Pedir Pizza</button>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div id="sub-div-4" class="sub-grid">
+            <h2 class="h2-sub-grid"> Nome da Pizza </h2>
+            <img class="img-pizza" src="" alt="">
+            <p class="p-preços">Preço da Pizza</p>
+            <button class="botao-acao">Pedir Pizza</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    type="text/javascript" src='script.js'> 
+  </script>
+</body>
+
+</html>
