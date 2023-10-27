@@ -2,7 +2,6 @@
   border: 0;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 #header{
@@ -33,9 +32,13 @@ body{
   color: #fff;
   word-spacing: 5px;
   font-size: 16px;
-  font-family: arial;
+  font-family: Arial;
+  font-weight: bold;
 }
-
+.link-cabeçalho:hover{
+  color: yellow;
+  transition: all ease-in-out 3ms;
+}
 #navegação{
   text-align: right;
   padding-right: 5px;
@@ -76,43 +79,53 @@ body{
   text-align: center;
 }
 .grid{
-  background-color: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  padding: 0px;
-}
-
-.sub-grid{
-  margin:0 auto;
-  background-color: #fff;
-  position: relative;
-
-  width: 100%;
-  height: 250px;
-}
-
-.sub-grid img{
-  position: absolute;
-  width: 100%;
+  display: grid;
   height: 100%;
-  object-fit: cover;
-  left: 0;
-  top: 0;
-
-  z-index: 1;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr, 1fr));
+  grid-column-gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 10px;
 }
-
-.item-sub-grid{
-  position: absolute;
-  width: 100%;
-  height: 250px;
-
-  z-index: 5;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.sub-grid{
+  font-family: Verdana, Arial;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: rgb(223, 222, 222);
+  padding-bottom: 20px;
+  padding-top: 2px;
+  margin: 2px;
+}
+.img-pizza{
+  max-width: 100%;
+}
+.h2-cardapio{
+  font-family: Arial;
+  font-size: 28px;
+  color: #fff;
+}
+.h2-sub-grid{
+  font-family: Arial;
+  font-size: 20px;
+  color: red;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.p-preços{
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.botao-acao{
+  width: 70%;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  padding-top: 5px;
 }
