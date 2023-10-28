@@ -11,6 +11,9 @@
 body{
   background-color: #FFA07A;
 }
+html{
+    scroll-behavior: smooth;
+}
 #h1-header{
   color: #fff;
   font-family: arial;
@@ -33,7 +36,6 @@ body{
   word-spacing: 5px;
   font-size: 16px;
   font-family: Arial;
-  font-weight: bold;
 }
 .link-cabeçalho:hover{
   color: yellow;
@@ -80,22 +82,21 @@ body{
 }
 .grid{
   display: grid;
-  height: 100%;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr, 1fr));
   grid-column-gap: 10px;
   max-width: 300px;
   margin: 0 auto;
-  gap: 20px;
   padding: 10px;
 }
 .sub-grid{
-  font-family: Verdana, Arial;
-  font-size: 1.6rem;
+  font-family: Arial;
+  max-width: 100%;
   text-align: center;
   background-color: rgb(223, 222, 222);
   padding-bottom: 20px;
   padding-top: 2px;
-  margin: 2px;
+  margin: 8px;
+
 }
 .img-pizza{
   max-width: 100%;
